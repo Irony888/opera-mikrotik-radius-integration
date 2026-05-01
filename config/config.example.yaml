@@ -1,0 +1,47 @@
+app:
+  name: MyApp
+  version: "1.0"
+
+opera:
+  endpoint: http://example.com/api
+  api_key: YOUR_API_KEY
+
+mikrotik:
+  address: 192.168.88.1
+  username: admin
+  password: YOUR_MIKROTIK_PASSWORD
+
+radius:
+  address: 192.168.1.1
+  secret: YOUR_RADIUS_SECRET
+
+database:
+  driver: mysql
+  host: localhost
+  port: 3306
+  username: root
+  password: YOUR_DB_PASSWORD
+  database: your_database_name
+
+email:
+  smtp_server: smtp.example.com
+  smtp_port: 587
+  username: your_email@example.com
+  password: YOUR_EMAIL_PASSWORD
+
+wifi:
+  ssid: your_wifi_ssid
+  password: your_wifi_password
+
+logging:
+  level: info
+  logfile: /var/log/myapp.log
+
+tasks:
+  interval: 5m
+
+security:
+  encryption_key: YOUR_ENCRYPTION_KEY
+  allowed_ips:
+    - 192.168.1.0/24
+    - 10.0.0.0/8
