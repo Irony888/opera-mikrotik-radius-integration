@@ -1,14 +1,49 @@
-Flask==2.3.0
-Flask-SQLAlchemy==3.0.5
-Flask-CORS==4.0.0
-psycopg2-binary==2.9.6
+# Core dependencies
+Flask==2.3.2
+Flask-RESTful==0.3.10
 requests==2.31.0
-PyYAML==6.0
 python-dotenv==1.0.0
-paramiko==3.2.0
-gunicorn==20.1.0
-alembic==1.11.1
-Jinja2==3.1.2
-MarkupSafe==2.1.1
+
+# Database
 SQLAlchemy==2.0.19
-schedule==1.2.0
+psycopg2-binary==2.9.6
+alembic==1.11.1
+
+# Configuration
+PyYAML==6.0
+pydantic==2.0.2
+
+# RADIUS & Network
+pyradiusdict==1.0.1
+paramiko==3.2.0
+netaddr==0.9.0
+
+# Security
+cryptography==41.0.1
+bcrypt==4.0.1
+
+# Logging & Monitoring
+python-json-logger==2.0.7
+prometheus-client==0.17.1
+
+# API Integration
+pyoperasdk==1.0.0
+
+# Testing
+pytest==7.4.0
+pytest-cov==4.1.0
+pytest-mock==3.11.1
+
+# Code Quality
+black==23.7.0
+pylint==2.17.4
+flake8==6.0.0
+isort==5.12.0
+
+# Development
+ipython==8.14.0
+jupyter==1.0.0
+
+# Production
+gunicorn==21.2.0
+psutil==5.9.5
